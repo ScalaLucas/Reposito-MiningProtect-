@@ -1,3 +1,25 @@
-@import "_variables";
-@import "_header";
+/*VARIABLES*/
+$ancho-alto-100:100%;
+$ancho-alto-50:50%;
+$fontfamily: 'Poppins', sans-serif;
+$medidalogo:150px;
+$pixeles:100px;
+$tamanio-fuente: 0.8rem;
+
+/*Variables de colores*/
+$bg-color-body: #000;
+$color-fondoboton1: #b39975;
+$color-texto: #ffffffff;
+$color-black: #000;
+$color-white: #ffffffff;
+
+
+@import "_main";
+@import "_nosotrosindx";
+@import "_general";
+@import "_footer";
+@import "_mediaquerys";
+
+
+
 

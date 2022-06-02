@@ -1,0 +1,26 @@
+.button-contact {
+	padding-top: 10px;
+	object-fit: cover;
+	padding-left: 48.5%;
+}
+.buttondiv {
+	padding-left: 44%;
+}
+.button-product1 {
+	width: 180px;
+	height: 30px;
+	color: rgb(255, 255, 255);
+	border-radius: 50px;
+	border: 3px solid rgb(255, 255, 255);
+	transition: all 1s;
+	padding-top: 5px;
+	background-color: #b39975;
+	a {
+		color: rgb(0, 0, 0);
+		text-decoration: none;
+		display: flex;
+		padding-bottom: 20px;
+		font-size: 10px;
+		justify-content: center;
+	}
+}

@@ -1,0 +1,44 @@
+.estilosFooter {
+	background-color: $bg-color-body;
+}
+.div-footer1 {
+	font-size: 15px;
+	display: flex;
+	text-align: center;
+	color: $color-black;
+}
+.div-imagenfooter {
+	display: flex;
+	width: 20px;
+	height: 20px;
+	background-color: $color-white;
+	border-radius: 80px;
+}
+.div-footer2 {
+	font-size: 20px;
+	text-align: center;
+	align-items: flex-end;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-right: 1%;
+	color: $color-black;
+}
+.div-footer-botton {
+	display: flex;
+	text-align: center;
+	flex-direction: center;
+	justify-content: flex-end;
+	gap: 25px;
+	padding-right: 20px;
+}
+.button-footer {
+	width: 50px;
+	height: 50px;
+	box-sizing: border-box;
+	border-radius: 80px;
+	box-shadow: 20px solid rgb(255, 255, 255);
+	display: inline-block;
+	border: 3px solid rgb(0, 0, 0);
+	transition: all 1s, border .5s;
+}
