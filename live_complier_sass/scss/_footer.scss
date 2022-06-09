@@ -1,44 +1,36 @@
-.estilosFooter {
-	background-color: $bg-color-body;
+.estilos_Footer {
+	background-color: map-get($mapa-colores, negro);
 }
-.div-footer1 {
-	font-size: 15px;
-	display: flex;
-	text-align: center;
-	color: $color-black;
+.estilos_footer1 {
+	font-size: map-get($fuentes , 15 );
+	@include flexbox4(center);
+	color:map-get($mapa-colores, negro);
 }
 .div-imagenfooter {
 	display: flex;
-	width: 20px;
-	height: 20px;
-	background-color: $color-white;
-	border-radius: 80px;
+	width:  ($pixeles/4)-5;
+	height:  ($pixeles/4)-5;
+	background-color: map-get($mapa-colores , blanco );
+	border-radius: ($pixeles)-20;
 }
-.div-footer2 {
-	font-size: 20px;
-	text-align: center;
-	align-items: flex-end;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+.estilos_footer2 {
+	@include flexbox2(column,center,flex-end,center);
+	font-size: map-get($fuentes , 20 );
 	margin-right: 1%;
-	color: $color-black;
+	color: map-get($mapa-colores, negro);
 }
-.div-footer-botton {
-	display: flex;
-	text-align: center;
-	flex-direction: center;
-	justify-content: flex-end;
-	gap: 25px;
-	padding-right: 20px;
+.estilos_footer-botton {
+	@include flexbox5(center,center,flex-end);
+	gap: ($pixeles/4);
+	padding-right: ($pixeles/4)-5;
 }
 .button-footer {
-	width: 50px;
-	height: 50px;
+	width: ($pixeles/2);
+	height: ($pixeles/2);
 	box-sizing: border-box;
-	border-radius: 80px;
-	box-shadow: 20px solid rgb(255, 255, 255);
+	border-radius:($pixeles)-20;
+	box-shadow: ($pixeles/4)-5 solid map-get($mapa-colores , blanco );
 	display: inline-block;
-	border: 3px solid rgb(0, 0, 0);
+	border: 3px solid map-get($mapa-colores , negro );
 	transition: all 1s, border .5s;
 }

@@ -5,20 +5,33 @@ $fontfamily: 'Poppins', sans-serif;
 $medidalogo:150px;
 $pixeles:100px;
 $tamanio-fuente: 0.8rem;
+$tamanio-rem: 1rem;
 
 /*Variables de colores*/
-$bg-color-body: #000;
 $color-fondoboton1: #b39975;
 $color-texto: #ffffffff;
-$color-black: #000;
 $color-white: #ffffffff;
 
 
+$mapa-colores:(
+    negro: #000,
+    blanco: white,);
+ 
+$fuentes:(
+    700: 700px,
+    rem:0.7rem,
+    15:15px,
+    20:20px,
+    1rem:1rem
+);    
+
+@import "_mixins.scss";   
 @import "_main";
 @import "_nosotrosindx";
 @import "_general";
 @import "_footer";
 @import "_mediaquerys";
+
 
 
 

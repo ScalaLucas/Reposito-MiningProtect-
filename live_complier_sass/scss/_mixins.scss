@@ -1,0 +1,32 @@
+@mixin flexbox($valor-flex-direction,$valor-justify-content,$valor-align-items){
+    display: flex;
+    flex-direction: $valor-flex-direction;
+    justify-content: $valor-justify-content;
+    align-items: $valor-align-items;
+}
+
+@mixin flexbox2($valor-flex-direction,$valor-justify-content,$valor-align-items,$valor-text-align){
+    display: flex;
+    flex-direction: $valor-flex-direction;
+    justify-content: $valor-justify-content;
+    align-items: $valor-align-items;
+    text-align: $valor-text-align;
+}
+
+@mixin flexbox3($valor-float){
+    display: inline;
+    float: $valor-float;
+}
+
+ @mixin flexbox4($valor-text-align){
+     display: flex;
+     text-align: $valor-text-align;
+ }
+
+
+@mixin flexbox5($valor-text-align,$valor-flex-direction,$valor-justify-content){
+    display: flex;
+    text-align: $valor-text-align;
+    flex-direction: $valor-flex-direction;
+    justify-content: $valor-justify-content;
+}
