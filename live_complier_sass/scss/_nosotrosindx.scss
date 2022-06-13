@@ -1,31 +1,56 @@
-.contenedor_we{
-	height: 80vh;
-	padding-top: 7%;
+
+.section_inicioproductos {
+	margin: 7% 1.3rem 5% 1.3rem;
+}
+.incio_productos-texto {
+	font-family: 'Poppins', sans-serif;
+	margin: 0% 20%;
+	text-align: center;
+}
+.inicio_productos-img {
+	display: flex;
+	justify-content: space-around;
+	row-gap: $pixeles;
+	flex-direction: row;
+	margin: ($ancho-alto-50)/10;
+	flex-wrap: wrap;
+	h3 {
+		text-align: center;
+	}
+	img {
+		height: 350px;
+		width: $ancho-alto-100;
+		border-radius: ($ancho-alto-100)/10;
+		background-color: map-get($mapa-colores , blanco );
+		transition: 0.5s;
+		filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.23));
+		&:hover {
+			transform: scale(1.1 , 1.1);
+		}
+	}
 }
 
 .button-contact {
-	padding-top: 10px;
-	object-fit: cover;
-	padding-left: 48.5%;
+	padding-top: ($pixeles)/10;
 }
-.buttondiv {
-	padding-left: 44%;
-}
+
 .button-product1 {
-	width: 180px;
-	height: 30px;
-	color: rgb(255, 255, 255);
-	border-radius: 50px;
-	border: 3px solid rgb(255, 255, 255);
-	transition: all 1s;
-	padding-top: 5px;
-	background-color: #b39975;
+	background-color: map-get($mapa-colores , negro );
+	padding-top: ($pixeles)/10;
+	border: none;
 	a {
-		color: rgb(0, 0, 0);
+		width: 15rem;
+		font-family: 'Poppins', sans-serif;
+		background-color: #b39975;
+		padding: 0.3rem;
+		border-radius: 0.3rem;
+		display: inline-block;
+		color: map-get($mapa-colores , negro );
 		text-decoration: none;
-		display: flex;
-		padding-bottom: 20px;
-		font-size: 10px;
+		font-size:map-get($fuentes , 15 );
 		justify-content: center;
 	}
 }
+
+
+

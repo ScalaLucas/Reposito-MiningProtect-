@@ -132,42 +132,72 @@ header {
      object-fit: cover;
 }
 
-.contenedor_we {
-  height: 80vh;
-  padding-top: 7%;
+.section_inicioproductos {
+  margin: 7% 1.3rem 5% 1.3rem;
+}
+
+.incio_productos-texto {
+  font-family: 'Poppins', sans-serif;
+  margin: 0% 20%;
+  text-align: center;
+}
+
+.inicio_productos-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  row-gap: 100px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 5%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.inicio_productos-img h3 {
+  text-align: center;
+}
+
+.inicio_productos-img img {
+  height: 350px;
+  width: 100%;
+  border-radius: 10%;
+  background-color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.23));
+          filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.23));
+}
+
+.inicio_productos-img img:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 
 .button-contact {
   padding-top: 10px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  padding-left: 48.5%;
-}
-
-.buttondiv {
-  padding-left: 44%;
 }
 
 .button-product1 {
-  width: 180px;
-  height: 30px;
-  color: white;
-  border-radius: 50px;
-  border: 3px solid white;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-  padding-top: 5px;
-  background-color: #b39975;
+  background-color: #000;
+  padding-top: 10px;
+  border: none;
 }
 
 .button-product1 a {
-  color: black;
+  width: 15rem;
+  font-family: 'Poppins', sans-serif;
+  background-color: #b39975;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  display: inline-block;
+  color: #000;
   text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 20px;
-  font-size: 10px;
+  font-size: 15px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -189,16 +219,8 @@ h2, strong {
           align-items: center;
 }
 
-h4 {
-  padding-left: 18%;
-}
-
-h5 {
-  padding-left: 42%;
-}
-
-em {
-  padding-left: 27%;
+h3 {
+  padding-top: 8%;
 }
 
 .estilos_Footer {
