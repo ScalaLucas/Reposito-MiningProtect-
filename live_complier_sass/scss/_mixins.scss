@@ -30,3 +30,9 @@
     flex-direction: $valor-flex-direction;
     justify-content: $valor-justify-content;
 }
+
+@mixin flexbox6($valor-text-align,$valor-justify-content,$valor-align-items){
+    text-align: $valor-text-align;
+    justify-content: $valor-justify-content;
+    align-items: $valor-align-items;
+}

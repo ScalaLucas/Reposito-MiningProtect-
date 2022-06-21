@@ -1,8 +1,14 @@
 /*section1 header/nosotros index mobile*/
 @media screen and (max-width: 576px) {
+    .section-footer {
+		grid-template-columns: 576px;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+
 	.logo1 {
 		width: $pixeles;
 		height: $pixeles;
+		margin: none;
 	}
 	.navbar {
 		margin-right:  map-get($fuentes , 1rem );
@@ -23,7 +29,7 @@
 	}
 	.section1_imagemobile {
 		object-fit: cover;
-		width:  ($ancho-alto-100)-30;
+		width:($ancho-alto-100)-30;
 	}
 
 /*Section2 video Index mobile (Seccion Video)*/    
@@ -42,37 +48,48 @@
 		background-color:map-get($mapa-colores , negro );
 	}
 	.estilos_footer1 {
-		font-size: 8px;
 		@include flexbox4(center);
 		color: map-get($mapa-colores , blanco );
+		
 	}
+
+	.estilos_footer4 {
+		font-size: map-get($fuentes, 12);
+	}
+
 	.div-imagenfooter {
 		width: ($pixeles/10);
 		height: ($pixeles/10);
 		background-color:  map-get($mapa-colores , blanco );
 		border-radius: ($pixeles)-20;
 	}
-	.estilos_footer2 {
-		@include flexbox2(column,center,flex-end,center);
-		font-size:  ($pixeles/10);
-		color: map-get($mapa-colores , blanco );
-		padding-right: ($tamanio-rem)*2;
+
+	.estilos_footer5{
+		font-size: map-get($fuentes, 10);
+		>p {
+			font-size: map-get($fuentes , 12)
+		}
 	}
+ 
 	.estilos_footer-botton {
-		@include flexbox3(right);
+		@include flexbox6(center,center,center);
+		font-size: map-get($fuentes, 10);
 	}
+
 	.button-footer {
 		width: 1.5rem;
 		height: 1.5rem;
 		border: 3px solid rgb(0, 0, 0);
 	}
+
 	.imagen_footer {
 		align-items: center;
-		width: ($tamanio-rem)/2;
-		height: ($tamanio-rem)/2;
+		width:($tamanio-rem)/2;
+		height:($tamanio-rem)/2;
 		object-fit: cover;
-		margin-bottom: ($ancho-alto-100/2);
+		margin-top:($ancho-alto-50)/2;
 	}
+    
 
     /*MOBILE NOSOTROS*/
 	.contenedor_we {
@@ -87,12 +104,15 @@
 		width: $pixeles;
 		height: $pixeles;
 	}
+
 	.navbar {
 		margin-right: map-get($fuentes , 1rem );
 	}
+
 	.section1__link {
 		display: inline-block;
 	}
+
 	.text_section1 {
 		font-family: 'Poppins', sans-serif;
 		color: rgb(53, 53, 53);
@@ -103,6 +123,7 @@
 			margin-left:($ancho-alto-100/2)-5;
 		}
 	}
+
 	.section1_imagemobile {
 		img {
 			width: $ancho-alto-100;
@@ -113,41 +134,43 @@
 	.estilos_footer {
 		background-color: rgb(0, 0, 0);
 	}
+
 	.estilos_footer1 {
 		font-size: map-get($fuentes , 15 );
 		@include flexbox4(center);
 		color: map-get($mapa-colores , blanco );
 	}
+
 	.div-imagenfooter {
 		width: ($pixeles/4)-5;
 		height: ($pixeles/4)-5;
 		background-color:  map-get($mapa-colores , blanco );
 		border-radius: ($pixeles)-20;
 	}
-	.estilos_footer2 {
-		@include flexbox2(column,center,flex-end,center);
-		font-size:map-get($fuentes , 15 );
-		color:map-get($mapa-colores , blanco );
-	}
+	
 	.estilos_footer-botton {
-		@include flexbox3(right);
-		padding-right: ($tamanio-rem)*4;
+		@include flexbox6(center,center,center);
 	}
+
 	.button-footer {
 		width: 1.5rem;
 		height: 1.5rem;
 		border: 3px solid rgb(0, 0, 0);
 	}
+
 	.imagen_footer {
 		align-items: center;
 		width:($tamanio-rem)/2;
 		height:($tamanio-rem)/2;
 		object-fit: cover;
-		margin-bottom: ($ancho-alto-100/2);
+		margin-bottom: $ancho-alto-50;
+		
 	}
+
 	.ustext1 {
 		margin-right: ($tamanio-rem)*10;
 	}
+
 	.button-product1 {
 		margin-right: ($ancho-alto-100/10);
 	}
@@ -160,9 +183,11 @@
 		width: $pixeles;
 		height: $pixeles;
 	}
+	
 	.section1__link {
 		display: inline-block;
 	}
+
 	.text_section1 {
 		font-family: 'Poppins', sans-serif;
 		color: rgb(53, 53, 53);
@@ -173,6 +198,7 @@
 			margin-left: ($ancho-alto-100/2);
 		}
 	}
+
 	.section1_imagemobile {
 		width:  $ancho-alto-100;
 		margin-top: ($ancho-alto-100/10)+5;
@@ -181,37 +207,41 @@
 	.estilos_footer {
 		background-color: map-get($mapa-colores , negro );
 	}
+
 	.estilos_footer1 {
 		font-size: map-get($fuentes , 15 );
 		@include flexbox4(center);
 		color:  map-get($mapa-colores , blanco );
 	}
+
 	.div-imagenfooter {
 		width: ($pixeles/4)-5;
 		height:($pixeles/4)-5;
 		background-color:  map-get($mapa-colores , blanco );
 		border-radius: ($pixeles)-20;
 	}
-	.estilos_footer2 {
-		@include flexbox2(column,center,flex-end,center);
+
+	.estilos_footer5 {
 		font-size:map-get($fuentes , 15 );
-		color: map-get($mapa-colores , blanco );
 	}
+
 	.estilos_footer-botton {
-		@include flexbox3(right);
-		padding-right: ($tamanio-rem)*4;
+		@include flexbox6(center,center,center);
 	}
+
 	.button-footer {
 		width: 1.5rem;
 		height: 1.5rem;
 		border: 3px solid rgb(0, 0, 0);
 	}
+
 	.imagen_footer {
 		align-items: center;
 		width: ($tamanio-rem)/2;
 		height: ($tamanio-rem)/2;
 		object-fit: cover;
-		margin-bottom:  ($ancho-alto-100/2);
+		margin-bottom: $ancho-alto-50;
+
 	}
 }
 /*---------------------------------------------------------------------------RESPONSIVE CON 1200PX INICIO------------------------------------------------------------------------------------*/
@@ -221,9 +251,11 @@
 		width: 150px;
 		height: 150px;
 	}
+
 	.section1__link {
 		display: inline-block;
 	}
+
 	.text_section1 {
 		font-family: 'Poppins', sans-serif;
 		color: rgb(53, 53, 53);
@@ -234,6 +266,7 @@
 			margin-left: ($ancho-alto-50)-15;
 		}
 	}
+
 	.section1_imagemobile {
 		width: $ancho-alto-100;
 		margin-top: ($ancho-alto-50/10);
@@ -242,37 +275,37 @@
 	.estilos_footer {
 		background-color:map-get($mapa-colores , negro );
 	}
+
 	.estilos_footer1 {
 		font-size: map-get($fuentes , 15 );
 		@include flexbox4(center);
 		color:  map-get($mapa-colores , blanco );
 	}
+
 	.div-imagenfooter {
 		width: ($pixeles/4)-5;
 		height:  ($pixeles/4)-5;
 		background-color: map-get($mapa-colores , blanco );
 		border-radius: ($pixeles)-20;
 	}
-	.estilos_footer2 {
-		@include flexbox2(column,center,flex-end,center);
-		font-size: map-get($fuentes , 15 );
-		color:  map-get($mapa-colores , blanco );
-	}
+
+
 	.estilos_footer-botton {
-		@include flexbox3(right);
-		padding-right:($tamanio-rem)*4;
+		@include flexbox6(center,center,center);
 	}
+
 	.button-footer {
 		width: 1.5rem;
 		height: 1.5rem;
 		border: 3px solid rgb(0, 0, 0);
 	}
+
 	.imagen_footer {
 		align-items: center;
 		width: ($tamanio-rem)/2;
 		height:($tamanio-rem)/2;
 		object-fit: cover;
-		margin-bottom: ($ancho-alto-100/2);
+		margin-bottom: $ancho-alto-50;	
 	}
 }
 /*---------------------------------------------------------------------------RESPONSIVE CON 1500PX INICIO------------------------------------------------------------------------------------*/
@@ -282,9 +315,11 @@
 		width: 150px;
 		height: 150px;
 	}
+
 	.section1__link {
 		display: inline-block;
 	}
+
 	.text_section1 {
 		font-family: 'Poppins', sans-serif;
 		color: rgb(53, 53, 53);
@@ -295,6 +330,7 @@
 			margin-left:($ancho-alto-50)-15;
 		}
 	}
+
 	.section1_imagemobile {
 		width: $ancho-alto-100;
 		margin-top: ($ancho-alto-50/10);
@@ -303,37 +339,36 @@
 	.estilos_footer {
 		background-color: map-get($mapa-colores , negro);
 	}
+
 	.estilos_footer1 {
 		font-size:  map-get($fuentes , 15 );
 		@include flexbox4(center);
 		color: map-get($mapa-colores , blanco );
 	}
+
 	.div-imagenfooter {
 		width: ($pixeles/4)-5;
 		height:  ($pixeles/4)-5;
 		background-color:  map-get($mapa-colores , blanco );
 		border-radius: ($pixeles)-20;
 	}
-	.estilos_footer2 {
-		@include flexbox2(column,center,flex-end,center);
-		font-size:   map-get($fuentes , 15 );
-		color: map-get($mapa-colores , blanco );
-	}
+
 	.estilos_footer-botton {
-		@include flexbox3(right);
-		padding-right: ($tamanio-rem)*4;
+		@include flexbox6(center,center,center);
 	}
+	
 	.button-footer {
 		width: 1.5rem;
 		height: 1.5rem;
 		border: 3px solid rgb(0, 0, 0);
 	}
+
 	.imagen_footer {
 		align-items: center;
 		width:($tamanio-rem)/2;
 		height:($tamanio-rem)/2;
 		object-fit: cover;
-		margin-bottom: ($ancho-alto-100/2);
+		margin-bottom: $ancho-alto-50;
+	
 	}
 }
-

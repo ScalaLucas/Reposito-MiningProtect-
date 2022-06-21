@@ -22,6 +22,8 @@ header {
 	border: 2px solid rgb(0, 0, 0);
 	object-fit: cover;
 	background-color:  map-get($mapa-colores, negro);
+        margin: none;
+       
 }
 
 
