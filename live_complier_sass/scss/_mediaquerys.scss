@@ -1,8 +1,9 @@
 /*section1 header/nosotros index mobile*/
 @media screen and (max-width: 576px) {
-    .section-footer {
-		grid-template-columns: 576px;
-		grid-template-rows: 1fr 1fr 1fr;
+    .container_grid {
+	   display: grid;
+	   grid-template-columns: 100%;
+	   grid-template-rows: repeat(3, 1fr);
 	}
 
 	.logo1 {
@@ -50,11 +51,11 @@
 	.estilos_footer1 {
 		@include flexbox4(center);
 		color: map-get($mapa-colores , blanco );
-		
 	}
 
-	.estilos_footer4 {
+	.estilos_footer3 {
 		font-size: map-get($fuentes, 12);
+	
 	}
 
 	.div-imagenfooter {
@@ -64,7 +65,7 @@
 		border-radius: ($pixeles)-20;
 	}
 
-	.estilos_footer5{
+	.estilos_footer2{
 		font-size: map-get($fuentes, 10);
 		>p {
 			font-size: map-get($fuentes , 12)
@@ -77,17 +78,17 @@
 	}
 
 	.button-footer {
-		width: 1.5rem;
-		height: 1.5rem;
+		width: ($pixeles)/2;
+		height:($pixeles)/2;
 		border: 3px solid rgb(0, 0, 0);
 	}
 
 	.imagen_footer {
 		align-items: center;
-		width:($tamanio-rem)/2;
-		height:($tamanio-rem)/2;
+		width: ($pixeles2)/2;
+		height:($pixeles2)/2;
 		object-fit: cover;
-		margin-top:($ancho-alto-50)/2;
+		margin-bottom: 8%;
 	}
     
 
@@ -100,6 +101,12 @@
 /*---------------------------------------------------------------------------RESPONSIVE CON 768PX INICIO------------------------------------------------------------------------------------*/
 
 @media screen and (max-width: 768px) {
+	.container_grid {
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: repeat(3, 1fr);
+	 }
+
 	.logo1 {
 		width: $pixeles;
 		height: $pixeles;
@@ -131,9 +138,6 @@
 		}
 	}
 
-	.estilos_footer {
-		background-color: rgb(0, 0, 0);
-	}
 
 	.estilos_footer1 {
 		font-size: map-get($fuentes , 15 );
@@ -153,18 +157,17 @@
 	}
 
 	.button-footer {
-		width: 1.5rem;
-		height: 1.5rem;
+		width: ($pixeles)/2;
+		height:($pixeles)/2;
 		border: 3px solid rgb(0, 0, 0);
 	}
 
 	.imagen_footer {
 		align-items: center;
-		width:($tamanio-rem)/2;
-		height:($tamanio-rem)/2;
+		width: ($pixeles2)/2;
+		height:($pixeles2)/2;
 		object-fit: cover;
-		margin-bottom: $ancho-alto-50;
-		
+		margin-bottom: 8%;
 	}
 
 	.ustext1 {
@@ -221,7 +224,7 @@
 		border-radius: ($pixeles)-20;
 	}
 
-	.estilos_footer5 {
+	.estilos_footer2 {
 		font-size:map-get($fuentes , 15 );
 	}
 
@@ -230,17 +233,17 @@
 	}
 
 	.button-footer {
-		width: 1.5rem;
-		height: 1.5rem;
+		width: ($pixeles)/2;
+		height:($pixeles)/2;
 		border: 3px solid rgb(0, 0, 0);
 	}
 
 	.imagen_footer {
 		align-items: center;
-		width: ($tamanio-rem)/2;
-		height: ($tamanio-rem)/2;
+		width: ($pixeles2)/2;
+		height:($pixeles2)/2;
 		object-fit: cover;
-		margin-bottom: $ancho-alto-50;
+		margin-bottom: 8%;
 
 	}
 }
@@ -272,10 +275,6 @@
 		margin-top: ($ancho-alto-50/10);
 	}
 
-	.estilos_footer {
-		background-color:map-get($mapa-colores , negro );
-	}
-
 	.estilos_footer1 {
 		font-size: map-get($fuentes , 15 );
 		@include flexbox4(center);
@@ -295,23 +294,23 @@
 	}
 
 	.button-footer {
-		width: 1.5rem;
-		height: 1.5rem;
+		width: ($pixeles)/2;
+		height:($pixeles)/2;
 		border: 3px solid rgb(0, 0, 0);
 	}
 
 	.imagen_footer {
 		align-items: center;
-		width: ($tamanio-rem)/2;
-		height:($tamanio-rem)/2;
+		width: ($pixeles2)/2;
+		height:($pixeles2)/2;
 		object-fit: cover;
-		margin-bottom: $ancho-alto-50;	
+		margin-bottom: 8%;
 	}
 }
 /*---------------------------------------------------------------------------RESPONSIVE CON 1500PX INICIO------------------------------------------------------------------------------------*/
 @media screen and (max-width: 1500px) {
 	.logo1 {
-		margin-left:  map-get($fuentes , 1rem );
+		margin-left:map-get($fuentes , 1rem );
 		width: 150px;
 		height: 150px;
 	}
@@ -336,10 +335,6 @@
 		margin-top: ($ancho-alto-50/10);
 	}
 
-	.estilos_footer {
-		background-color: map-get($mapa-colores , negro);
-	}
-
 	.estilos_footer1 {
 		font-size:  map-get($fuentes , 15 );
 		@include flexbox4(center);
@@ -358,17 +353,17 @@
 	}
 	
 	.button-footer {
-		width: 1.5rem;
-		height: 1.5rem;
+		width: ($pixeles)/2;
+		height:($pixeles)/2;
 		border: 3px solid rgb(0, 0, 0);
 	}
 
 	.imagen_footer {
 		align-items: center;
-		width:($tamanio-rem)/2;
-		height:($tamanio-rem)/2;
+		width: ($pixeles2)/2;
+		height:($pixeles2)/2;
 		object-fit: cover;
-		margin-bottom: $ancho-alto-50;
+		margin-bottom: 8%;
 	
 	}
 }
