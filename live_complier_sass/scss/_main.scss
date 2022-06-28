@@ -34,7 +34,7 @@ header {
         background-color: map-get($mapa-colores, negro);
         @include flexbox(column,center,center);
         font-family: $fontfamily;
-        font-size: $tamanio-fuente;
+        font-size: 18px;
  
 
 img{

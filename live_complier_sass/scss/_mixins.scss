@@ -36,3 +36,10 @@
     justify-content: $valor-justify-content;
     align-items: $valor-align-items;
 }
+
+@mixin flexbox7($valor-align-items,$valor-justify-content) {
+    display: flex;
+    justify-content: $valor-justify-content;
+    align-items: $valor-align-items;
+    
+}

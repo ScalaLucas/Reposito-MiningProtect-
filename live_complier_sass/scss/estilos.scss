@@ -5,6 +5,7 @@ $fontfamily: 'Poppins', sans-serif;
 $medidalogo:150px;
 $pixeles:100px;
 $pixeles2:50px;
+$pixeles3:10px;
 $tamanio-fuente: 0.8rem;
 $tamanio-rem: 1rem;
 
@@ -34,7 +35,7 @@ $fuentes:(
 @import "_general";
 @import "_footer";
 @import "_mediaquerys";
-
+@import "_contacto.scss";
 
 
 
